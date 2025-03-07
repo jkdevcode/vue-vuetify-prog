@@ -32,8 +32,9 @@ export default createVuetify({
     BotonSecundario: {
       color: 'secondary',
       variant: 'outlined',
-      size: 'medium',
-      class: 'text-capitalize'
+      size: 'large',
+      class: 'text-capitalize',
+      elevation: '2'
     }
   }
 })

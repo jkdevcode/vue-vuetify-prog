@@ -1,10 +1,7 @@
 <template>
-  <v-app>
-    <v-main>
-      <EjemploAliasing />
-    </v-main>
-  </v-app>
+  <router-view />
 </template>
 
 <script setup>
+// El layout principal se maneja a través del router
 </script>
