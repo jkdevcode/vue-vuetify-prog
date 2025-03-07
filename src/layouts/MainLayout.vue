@@ -88,6 +88,7 @@
       { title: 'Expansion Panels', route: '/components/expansion-panels' },
       { title: 'Menus', route: '/components/menus' },
       { title: 'Overlays', route: '/components/overlays' },
+      { title: 'Tooltips', route: '/components/tooltips' },
       //   { title: 'Formularios', route: '/components/forms' }
     ],
     // api: [

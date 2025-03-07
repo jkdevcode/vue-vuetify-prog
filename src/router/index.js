@@ -84,6 +84,11 @@ const router = createRouter({
           name: 'overlays',
           component: () => import('@/views/components/OverlaysView.vue'),
         },
+        {
+          path: 'components/tooltips',
+          name: 'tooltips',
+          component: () => import('@/views/components/TooltipView.vue'),
+        },
 
 
         // Redirección por defecto
