@@ -69,6 +69,11 @@ const router = createRouter({
           name: 'dialogs',
           component: () => import('@/views/components/DialogsView.vue')
         },
+        {
+          path: 'components/expansion-panels',
+          name: 'expansion-panels',
+          component: () => import('@/views/components/ExpansionPanelsView.vue')
+        },
 
         // Redirección por defecto
         {
