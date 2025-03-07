@@ -64,6 +64,11 @@ const router = createRouter({
           name: 'chips',
           component: () => import('@/views/components/ChipsView.vue')
         },
+        {
+          path: 'components/dialogs',
+          name: 'dialogs',
+          component: () => import('@/views/components/DialogsView.vue')
+        },
 
         // Redirección por defecto
         {
