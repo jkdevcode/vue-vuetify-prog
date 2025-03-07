@@ -4,17 +4,8 @@
     <v-app-bar color="primary" density="compact">
       <v-app-bar-title>Vuetify Docs</v-app-bar-title>
 
-      <v-tabs
-        v-model="activeTab"
-        color="white"
-        align-tabs="center"
-      >
-        <v-tab
-          v-for="item in mainMenuItems"
-          :key="item.title"
-          :value="item.value"
-          @click="handleMainMenuClick(item)"
-        >
+      <v-tabs v-model="activeTab" color="white" align-tabs="center">
+        <v-tab v-for="item in mainMenuItems" :key="item.title" :value="item.value" @click="handleMainMenuClick(item)">
           {{ item.title }}
         </v-tab>
       </v-tabs>
@@ -24,12 +15,7 @@
     <v-navigation-drawer v-model="drawer" permanent>
       <v-list>
         <v-list-subheader>{{ activeSection }}</v-list-subheader>
-        <v-list-item
-          v-for="item in subMenuItems[activeTab]"
-          :key="item.title"
-          :value="item.value"
-          :to="item.route"
-        >
+        <v-list-item v-for="item in subMenuItems[activeTab]" :key="item.title" :value="item.value" :to="item.route">
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
@@ -45,11 +31,7 @@
         </router-view>
       </v-container>
     </v-main>
-
-    <!-- Pie de página -->
-    <v-footer app color="primary" class="text-center d-flex justify-center">
-      <span class="white--text">&copy; {{ new Date().getFullYear() }} - Documentación Vuetify</span>
-    </v-footer>
+    <AppFooter />
   </v-app>
 </template>
 
