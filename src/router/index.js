@@ -79,6 +79,11 @@ const router = createRouter({
           name: 'menus',
           component: () => import('@/views/components/MenusView.vue'),
         },
+        {
+          path: 'components/overlays',
+          name: 'overlays',
+          component: () => import('@/views/components/OverlaysView.vue'),
+        },
 
 
         // Redirección por defecto

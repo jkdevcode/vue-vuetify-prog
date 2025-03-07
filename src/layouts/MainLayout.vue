@@ -87,6 +87,7 @@
       { title: 'Diálogos', route: '/components/dialogs' },
       { title: 'Expansion Panels', route: '/components/expansion-panels' },
       { title: 'Menus', route: '/components/menus' },
+      { title: 'Overlays', route: '/components/overlays' },
       //   { title: 'Formularios', route: '/components/forms' }
     ],
     // api: [
