@@ -1,11 +1,10 @@
 <template>
   <v-app>
     <v-main>
-      <router-view />
+      <EjemploAliasing />
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-  //
 </script>
