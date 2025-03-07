@@ -74,6 +74,12 @@ const router = createRouter({
           name: 'expansion-panels',
           component: () => import('@/views/components/ExpansionPanelsView.vue'),
         },
+        {
+          path: 'components/menus',
+          name: 'menus',
+          component: () => import('@/views/components/MenusView.vue'),
+        },
+
 
         // Redirección por defecto
         {
