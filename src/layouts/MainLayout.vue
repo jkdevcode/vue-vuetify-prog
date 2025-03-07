@@ -49,7 +49,7 @@ const mainMenuItems = [
   { title: 'Funciones', value: 'functions' },
   // { title: 'Estilos y Animaciones', value: 'styles' },
   // { title: 'Conceptos Comunes', value: 'concepts' },
-  // { title: 'Componentes', value: 'components' },
+  { title: 'Componentes', value: 'components' },
   // { title: 'API', value: 'api' }
 ]
 
@@ -70,11 +70,11 @@ const subMenuItems = {
   //   { title: 'Estructura', route: '/concepts/structure' },
   //   { title: 'Plugins', route: '/concepts/plugins' }
   // ],
-  // components: [
-  //   { title: 'Botones', route: '/components/buttons' },
+  components: [
+    { title: 'Botones', route: '/components/buttons' },
   //   { title: 'Tarjetas', route: '/components/cards' },
   //   { title: 'Formularios', route: '/components/forms' }
-  // ],
+  ],
   // api: [
   //   { title: 'Referencias', route: '/api/references' },
   //   { title: 'Ejemplos', route: '/api/examples' },

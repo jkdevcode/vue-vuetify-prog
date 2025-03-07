@@ -48,6 +48,12 @@ const router = createRouter({
           name: 'themes',
           component: () => import('@/views/styles/ThemesView.vue')
         },
+        // rutas componentes
+        {
+          path: 'components/buttons',
+          name: 'buttons',
+          component: () => import('@/views/components/ButtonsView.vue')
+        },
 
         // Redirección por defecto
         {
