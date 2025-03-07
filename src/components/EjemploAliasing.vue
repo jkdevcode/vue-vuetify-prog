@@ -6,21 +6,23 @@
       <!-- Botón Primario -->
       <div>
         <h3 class="mb-2">Botón Primario</h3>
-        <BotonPrimario @click="mostrarMensaje('primario')">
-          Botón Primario
-        </BotonPrimario>
+        <BotonPrimario @click="mostrarMensaje('primario')">Botón Primario</BotonPrimario>
       </div>
 
       <!-- Botón Secundario -->
       <div>
         <h3 class="mb-2">Botón Secundario</h3>
-        <BotonSecundario @click="mostrarMensaje('secundario')">
-          Botón Secundario
-        </BotonSecundario>
+        <BotonSecundario @click="mostrarMensaje('secundario')">Botón Secundario</BotonSecundario>
       </div>
 
       <!-- Mostrar el mensaje -->
-      <v-alert v-if="mensaje" :color="mensajeColor" class="mt-4" closable @click:close="mensaje = ''">
+      <v-alert
+        v-if="mensaje"
+        :color="mensajeColor"
+        class="mt-4"
+        closable
+        @click:close="mensaje = ''"
+      >
         {{ mensaje }}
       </v-alert>
     </div>
@@ -28,19 +30,19 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const mensaje = ref('')
-const mensajeColor = ref('primary')
+  const mensaje = ref('');
+  const mensajeColor = ref('primary');
 
-const mostrarMensaje = (tipo) => {
-  mensaje.value = `Has hecho clic en el botón ${tipo}`
-  mensajeColor.value = tipo === 'primario' ? 'primary' : 'secondary'
-}
+  const mostrarMensaje = (tipo) => {
+    mensaje.value = `Has hecho clic en el botón ${tipo}`;
+    mensajeColor.value = tipo === 'primario' ? 'primary' : 'secondary';
+  };
 </script>
 
 <style scoped>
-.gap-4 {
-  gap: 1rem;
-}
+  .gap-4 {
+    gap: 1rem;
+  }
 </style>

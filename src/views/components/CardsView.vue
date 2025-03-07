@@ -1,7 +1,11 @@
-<template><!-- inicializamos la plantilla Html -->
-  <v-container class="md"> <!-- contenedor principal -->
-    <v-col cols="12" sm="6" md="4"> <!-- columna de 12 columnas, 6 columnas en sm, 4 columnas en md -->
-      <v-card class="mb-4"> <!-- card -->
+<template>
+  <!-- inicializamos la plantilla Html -->
+  <v-container class="md">
+    <!-- contenedor principal -->
+    <v-col cols="12" sm="6" md="4">
+      <!-- columna de 12 columnas, 6 columnas en sm, 4 columnas en md -->
+      <v-card class="mb-4">
+        <!-- card -->
         <v-card-title>Título de la Tarjeta</v-card-title>
         <v-card-text>
           Este es un ejemplo básico de una tarjeta usando Vuetify. Las tarjetas son contenedores
@@ -11,9 +15,14 @@
           <v-btn color="primary">Acción</v-btn>
         </v-card-actions>
       </v-card>
-      <v-card :variant="outlined" class="mx-auto" color="surface-variant"
-        subtitle="Greyhound divisely hello coldly fonwderfully" title="Headline">
-        <template v-slot:actions>
+      <v-card
+        :variant="outlined"
+        class="mx-auto"
+        color="surface-variant"
+        subtitle="Greyhound divisely hello coldly fonwderfully"
+        title="Headline"
+      >
+        <template #actions>
           <v-btn text="Button" />
         </template>
       </v-card>
@@ -21,8 +30,6 @@
   </v-container>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style scoped></style>
