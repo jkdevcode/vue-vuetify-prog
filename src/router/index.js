@@ -54,6 +54,11 @@ const router = createRouter({
           name: 'buttons',
           component: () => import('@/views/components/ButtonsView.vue')
         },
+        {
+          path: 'components/cards',
+          name: 'cards',
+          component: () => import('@/views/components/CardsView.vue')
+        },
 
         // Redirección por defecto
         {

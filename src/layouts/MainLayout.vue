@@ -72,8 +72,8 @@ const subMenuItems = {
   // ],
   components: [
     { title: 'Botones', route: '/components/buttons' },
-  //   { title: 'Tarjetas', route: '/components/cards' },
-  //   { title: 'Formularios', route: '/components/forms' }
+    { title: 'Tarjetas', route: '/components/cards' },
+    //   { title: 'Formularios', route: '/components/forms' }
   ],
   // api: [
   //   { title: 'Referencias', route: '/api/references' },
