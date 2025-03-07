@@ -59,6 +59,11 @@ const router = createRouter({
           name: 'cards',
           component: () => import('@/views/components/CardsView.vue')
         },
+        {
+          path: 'components/chips',
+          name: 'chips',
+          component: () => import('@/views/components/ChipsView.vue')
+        },
 
         // Redirección por defecto
         {

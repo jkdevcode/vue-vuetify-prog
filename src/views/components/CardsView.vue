@@ -11,12 +11,8 @@
           <v-btn color="primary">Acción</v-btn>
         </v-card-actions>
       </v-card>
-      <v-card
-        :variant="variant"
-        class="mx-auto"
-        color="color"
-        subtitle="Greyhound divisely hello coldly fonwderfully"
-        title="Headline">
+      <v-card :variant="outlined" class="mx-auto" color="surface-variant"
+        subtitle="Greyhound divisely hello coldly fonwderfully" title="Headline">
         <template v-slot:actions>
           <v-btn text="Button" />
         </template>
